@@ -1,0 +1,34 @@
+***********************************************************************
+    DECLARATION SECTION
+***********************************************************************
+
+    //  DECLARE A NEW CREATIVE TAB  
+        public static CreativeTabs MyCreativeTab_1;
+
+
+***********************************************************************
+    LOAD SECTION
+***********************************************************************
+
+    //  LOAD THE CREATIVE TAB
+        MyCreativeTab_1 = new CreativeTabs("MyCreativeTab_1") {
+            public ItemStack getIconItemStack() {
+                return new ItemStack(MyItem_1, 1, 0);   // Icon, Stack Size, Tab Position
+            }
+        };
+
+    
+***********************************************************************
+    EXTRA METHODS SECTION
+***********************************************************************
+
+    //  CHANGE TAB NAME
+        LanguageRegistry.instance().addStringLocalization("itemGroup.MyCreativeTab_1", "en_US", "My Awesome Tab");   
+
+
+****************************************************************************
+    ADD THIS METHOD TO THE LOAD SECTION OF THE ITEMS YOU WANT IN THE TAB
+****************************************************************************
+
+    .setCreativeTab(MyCreativeTab_1)
+    

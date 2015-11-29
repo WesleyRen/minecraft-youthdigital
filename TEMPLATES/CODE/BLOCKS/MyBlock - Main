@@ -1,0 +1,28 @@
+**********************************************************************
+  DECLARATION SECTION
+**********************************************************************
+
+
+    //  DECLARE THE BLOCK
+        public static Block MyBlock_1;
+
+    
+**********************************************************************
+  LOAD SECTION
+**********************************************************************
+
+
+    //  LOAD THE BLOCK 
+        MyBlock_1 = new MyBlock(250, Material.rock, "MyBlock_1");
+        GameRegistry.registerBlock(MyBlock_1, "MyBlock_1");
+        LanguageRegistry.addName(MyBlock_1, "My Awesome Block"); 
+		MinecraftForge.setBlockHarvestLevel(MyBlock_1, "pickaxe", 0);
+
+
+**********************************************************************
+  RECIPES SECTION
+**********************************************************************
+        
+    //  SMELTING RECIPE
+        GameRegistry.addSmelting(MyBlock_1.blockID, (new ItemStack(MyItem_1, 1)), 10);
+         

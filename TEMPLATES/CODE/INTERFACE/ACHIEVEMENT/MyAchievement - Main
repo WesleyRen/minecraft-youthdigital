@@ -1,0 +1,27 @@
+**********************************************************************
+  DECLARATION SECTION
+**********************************************************************
+
+    //	DECLARE A NEW ACHIEVEMENT	
+    	public static Achievement MyAchievement_1;
+
+
+**********************************************************************
+  LOAD SECTION
+**********************************************************************
+
+	//	LOAD THE ACHIEVEMENT
+		MyAchievement_1 = new Achievement(2001, "MyAchievement_1", -1, -1, MyItem_1, AchievementList.openInventory).registerAchievement();
+		//	(id, "NameOfAchievement", x, y coordinates on Achievement map, icon, Required Achievement to unlock)
+		// 	For no Pre-required achievement, use "(Achievement)null"	
+
+
+**********************************************************************
+  EXTRA METHODS SECTION
+**********************************************************************
+	
+    //	CHANGE THE TEXT OF THE ACHIEVEMENT	
+    	LanguageRegistry.instance().addStringLocalization("achievement.MyAchievement_1", "en_US", "Achievement Name Here");
+    	LanguageRegistry.instance().addStringLocalization("achievement.MyAchievement_1.desc", "en_US", "Achievement Instructions Here");
+    
+	

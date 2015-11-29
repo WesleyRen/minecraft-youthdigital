@@ -1,0 +1,336 @@
+
+/* AMBIENT */
+-------------------------------------
+    ambient.cave.cave
+    ambient.weather.rain
+    ambient.weather.thunder
+
+
+/* DAMAGE */
+-------------------------------------
+    damage.fallbig
+    damage.fallsmall
+    damage.hit
+
+
+/* DIG */
+-------------------------------------
+    dig.cloth
+    dig.grass
+    dig.gravel
+    dig.sand
+    dig.snow
+    dig.stone
+    dig.wood
+
+
+/* FIRE */
+-------------------------------------
+    fire.fire
+    fire.ignite
+
+
+/* FIREWORKS */
+-------------------------------------
+    fireworks.blast_far1
+    fireworks.blast1
+    fireworks.largeBlast_far1
+    fireworks.largeBlast1
+    fireworks.launch1
+    fireworks.twinkle_far1
+    fireworks.twinkle1
+    
+    
+/* LIQUID */
+-------------------------------------    
+    liquid.lava
+    liquid.lavapop
+    liquid.splash
+    liquid.swim
+    liquid.water
+
+
+/* MINECART */
+-------------------------------------    
+    minecart.base
+    minecart.inside
+
+
+/* BAT */
+-------------------------------------    
+    mob.bat.death
+    mob.bat.hurt
+    mob.bat.idle
+    mob.bat.loop
+    mob.bat.takeoff
+
+
+/* BLAZE */
+-------------------------------------    
+    mob.blaze.breathe
+    mob.blaze.death
+    mob.blaze.hit
+
+
+/* CAT */
+-------------------------------------    
+    mob.cat.hiss
+    mob.cat.hitt
+    mob.cat.meow
+    mob.cat.purr
+    mob.cat.purreow
+
+
+/* CHICKEN */
+-------------------------------------    
+    mob.chicken.hurt
+    mob.chicken.plop
+    mob.chicken.say
+    mob.chicken.step
+
+
+/* COW */
+-------------------------------------    
+    mob.cow.hurt
+    mob.cow.say
+    mob.cow.step
+
+
+/* CREEPER */
+-------------------------------------    
+    mob.creeper.death
+    mob.creeper.say
+
+
+/* ENDERDRAGON */
+-------------------------------------    
+    mob.enderdragon.end
+    mob.enderdragon.growl
+    mob.enderdragon.hit
+    mob.enderdragon.wings
+    
+    
+/* ENDERMEN */
+-------------------------------------    
+    mob.endermen.death
+    mob.endermen.hit
+    mob.endermen.idle
+    mob.endermen.portal
+    mob.endermen.scream
+    mob.endermen.stare
+
+
+/* GHAST */
+-------------------------------------
+    mob.ghast.affectionate_scream
+    mob.ghast.charge
+    mob.ghast.death
+    mob.ghast.fireball4  
+    mob.ghast.moan
+    mob.ghast.scream
+
+
+/* HORSE */
+-------------------------------------
+    mob.horse.angry
+    mob.horse.armor
+    mob.horse.breathe
+    mob.horse.death
+    mob.horse.gallop
+    mob.horse.hit
+    mob.horse.idle
+    mob.horse.jump
+    mob.horse.land
+    mob.horse.leather
+    mob.horse.soft
+    mob.horse.wood
+    mob.horse.donkey.angry
+    mob.horse.donkey.death
+    mob.horse.donkey.hit
+    mob.horse.donkey.idle
+    mob.horse.skeleton.death
+    mob.horse.donkey.hi
+    mob.horse.donkey.idle
+    mob.horse.zombie.death
+    mob.horse.zombie.hit
+    mob.horse.zombie.idle
+    
+    
+/* IRON GOLEM */
+-------------------------------------
+    mob.irongolem.death
+    mob.irongolem.hit
+    mob.irongolem.throw
+    mob.irongolem.walk
+
+
+/* MAGMA CUBE */
+-------------------------------------
+    mob.magmacube.big
+    mob.magmacube.jump
+    mob.magmacube.small
+
+
+/* PIG */
+-------------------------------------
+    mob.pig.death
+    mob.pig.say
+    mob.pig.step
+
+
+/* SHEEP */
+-------------------------------------
+    mob.sheep.say
+    mob.sheep.shear
+    mob.sheep.step
+
+
+/* SILVERFISH */
+-------------------------------------
+    mob.silverfish.hit
+    mob.silverfish.kill
+    mob.silverfish.say
+    mob.silverfish.step
+
+
+/* SKELETON */
+-------------------------------------
+    mob.skeleton.death
+    mob.skeleton.hurt
+    mob.skeleton.say
+    mob.skeleton.step
+
+
+/* SLIME */
+-------------------------------------
+    mob.slime.attack
+    mob.slime.big
+    mob.slime.small
+
+
+/* SPIDER */
+-------------------------------------
+    mob.spider.death
+    mob.spider.say
+    mob.spider.step
+
+
+/* VILLAGER */
+-------------------------------------
+    mob.villager.death
+    mob.villager.haggle
+    mob.villager.hit
+    mob.villager.idle
+    mob.villager.no
+    mob.villager.yes
+
+
+/* WITHER */
+-------------------------------------
+    mob.wither.death
+    mob.wither.hurt
+    mob.wither.idle
+    mob.wither.shoot
+    mob.wither.spawn
+
+
+/* WOLF */
+-------------------------------------
+    mob.wolf.bark
+    mob.wolf.death
+    mob.wolf.growl
+    mob.wolf.howl
+    ob.wolf.hurt
+    mob.wolf.panting
+     mob.wolf.shake
+    mob.wolf.step
+    mob.wolf.whine
+
+
+/* ZOMBIE */
+-------------------------------------
+    mob.zombie.death 
+    mob.zombie.hurt
+    mob.zombie.infect
+    mob.zombie.metal
+    mob.zombie.say
+    mob.zombie.step
+    mob.zombie.remedy
+    mob.zombie.unfect
+    mob.zombie.wood
+    mob.zombie.woodbreak
+
+
+/* ZOMBIE PIGMAN */
+-------------------------------------
+    mob.zombiepig.zpig
+    mob.zombiepig.zpigangry
+    mob.zombiepig.zpigdeath
+    mob.zombiepig.zpighurt
+
+
+/* NOTE */
+-------------------------------------
+    note.bass
+    note.bassattack
+    note.bd
+    note.harp
+    note.hat
+    note.pling
+    note.snare
+
+
+/* PORTAL */
+-------------------------------------
+    portal.portal  
+    portal.travel  
+    portal.trigger
+
+
+/* RANDOM */
+-------------------------------------
+    random.anvil_break
+    random.anvil_land
+    random.anvil_use
+    random.bow
+    random.bowhit
+    random.break
+    random.breath
+    random.burp
+    random.chestclosed
+    random.chestopen
+    random.classic_hurt
+    random.click
+    random.door_close
+    random.door_open
+    random.drink
+    random.eat
+    random.explode
+    random.fizz
+    random.fuse
+    random.glass
+    random.levelup
+    random.orb
+    random.pop
+    random.successful_hit
+    random.wood_click
+
+
+/* STEP */
+-------------------------------------
+    step.cloth
+    step.grass
+    step.gravel
+    step.ladder
+    step.sand
+    step.snow
+    step.stone
+    step.wood
+
+
+/* PISTON */
+-------------------------------------
+    tile.piston.in
+    tile.piston.out
+        
+    

@@ -1,0 +1,26 @@
+package mymod.entity.abe;
+
+import net.minecraft.entity.EntityAgeable;
+import net.minecraft.entity.passive.EntityAnimal;
+import net.minecraft.world.World;
+
+public class MyEntityAbe extends EntityAnimal
+{
+    public MyEntityAbe(World par1World)
+    {
+        super(par1World);
+        this.setSize(0.9F, 1.3F);  
+    }
+
+    public boolean isAIEnabled()
+    {
+        return true;
+    }
+
+    @Override
+    public EntityAgeable createChild(EntityAgeable entityageable) {
+        return null;
+    }
+
+ 
+}

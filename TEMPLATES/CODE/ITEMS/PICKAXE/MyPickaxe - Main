@@ -1,0 +1,32 @@
+**********************************************************************
+  DECLARATION SECTION
+**********************************************************************
+
+    //  DECLARE THE PICKAXE 
+        public static Item MyPickaxe_1;
+      
+        
+**********************************************************************
+  LOAD SECTION
+**********************************************************************
+
+    //  LOAD THE PICKAXE
+        MyPickaxe_1 = new MyPickaxe(2022, EnumToolMaterial.IRON, "MyPickaxe_1");
+        GameRegistry.registerItem(MyPickaxe_1, "MyPickaxe_1");
+        LanguageRegistry.addName(MyPickaxe_1, "My Awesome Pickaxe");  
+        
+
+**********************************************************************
+  RECIPES SECTION
+**********************************************************************
+    
+    //  PICKAXE RECIPE  
+        GameRegistry.addRecipe(new ItemStack(MyPickaxe_1, 1), new Object[]
+        {
+                "XXX",
+                " S ",
+                " S ",
+            'S', Item.stick,
+            'X', Item.blazeRod,
+        }); 
+        

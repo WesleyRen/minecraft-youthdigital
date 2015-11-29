@@ -1,0 +1,30 @@
+**********************************************************************
+  DECLARATION SECTION
+**********************************************************************
+
+    //  DECLARE THE ITEM
+        public static Item MyItem_1;
+    
+    
+**********************************************************************
+  LOAD SECTION
+**********************************************************************
+
+    //  LOAD THE ITEM
+        MyItem_1 = new MyItem(2030, "MyItem_1").setCreativeTab(CreativeTabs.tabMisc);
+        GameRegistry.registerItem(MyItem_1, "MyItem_1");
+        LanguageRegistry.addName(MyItem_1, "My Really Awesome Item");  
+    
+
+**********************************************************************
+  RECIPES SECTION
+**********************************************************************
+
+    //  ITEM RECIPE         
+        GameRegistry.addRecipe(new ItemStack(MyItem_1, 1), new Object[]
+        {
+                "S S",
+                " S ",
+                "S S",
+            'S', Item.stick,
+        });

@@ -1,0 +1,7 @@
+**********************************************************************
+  EXTRA METHODS SECTION
+**********************************************************************
+
+//  REGISTER THE ORE GENERATION 
+    GameRegistry.registerWorldGenerator(new MyBlockGen());
+        

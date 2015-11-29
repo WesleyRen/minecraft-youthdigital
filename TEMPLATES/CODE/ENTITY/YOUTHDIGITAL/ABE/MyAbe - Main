@@ -1,0 +1,35 @@
+***********************************************************************
+    LOAD SECTION
+***********************************************************************
+        
+    //  REGISTER YOUR ENTITY
+        EntityRegistry.registerGlobalEntityID(MyEntityAbe.class, "Abe", EntityRegistry.findGlobalUniqueEntityId());
+        EntityRegistry.addSpawn(MyEntityAbe.class, 50, 1, 5, EnumCreatureType.monster, BiomeGenBase.desert);
+        EntityRegistry.addSpawn(MyEntityAbe.class, 50, 1, 5, EnumCreatureType.monster, MyBiome_1);     
+        registerEntityEgg(MyEntityAbe.class, (new Color(97, 71, 52)).getRGB(), (new Color(151, 137, 111)).getRGB());
+        RenderingRegistry.registerEntityRenderingHandler(MyEntityAbe.class, new MyRenderAbe(new MyModelAbe(), 0.3F));
+        ModLoader.addLocalization("entity.Abe.name", "Abe");
+
+        
+**************************************************************
+    DECLARATION SECTION - ONLY REQUIRED FOR FIRST MOB
+**************************************************************
+    
+    //  DECLARE THE MOD ID
+        static int MyEntityID = 300;
+    
+    //  SEARCH FOR UNIQUE ID    
+        public static int getUniqueEntityId() {
+            do {
+                MyEntityID++;
+            }
+            while (EntityList.getStringFromID(MyEntityID) != null);
+            return MyEntityID++;
+        }
+    
+    //  DECLARE A NEW EGG
+        public static void registerEntityEgg(Class <? extends Entity> entity, int primaryColor, int secondaryColor) {
+            int id = getUniqueEntityId();
+            EntityList.IDtoClassMapping.put(id, entity);
+            EntityList.entityEggs.put(id, new EntityEggInfo(id, primaryColor, secondaryColor));
+        }

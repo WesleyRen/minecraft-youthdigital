@@ -1,0 +1,73 @@
+**********************************************************************
+  DECLARATION SECTION
+**********************************************************************
+
+    //  DECLARE THE ARMOR
+        public static Item MyHelmet_1;
+        public static Item MyChest_1;
+        public static Item MyLeggings_1;
+        public static Item MyBoots_1;
+  
+      
+**********************************************************************
+  LOAD SECTION
+**********************************************************************
+
+    //  LOAD HELMET 
+        MyHelmet_1 = new MyArmor(2060, EnumArmorMaterial.IRON, 0, 0, "myarmor");
+        GameRegistry.registerItem(MyHelmet_1, "MyHelmet_1");
+        LanguageRegistry.addName(MyHelmet_1, "My Awesome Helmet");      
+    
+//  LOAD CHESTPLATE
+        MyChest_1 = new MyArmor(2061, EnumArmorMaterial.IRON, 0, 1, "myarmor");
+        GameRegistry.registerItem(MyChest_1, "MyChest_1");
+        LanguageRegistry.addName(MyChest_1, "My Awesome Chest");
+
+//  LOAD LEGGINGS    
+        MyLeggings_1 = new MyArmor(2062, EnumArmorMaterial.IRON, 0, 2, "myarmor");
+        GameRegistry.registerItem(MyLeggings_1, "MyLeggings_1");
+        LanguageRegistry.addName(MyLeggings_1, "My Awesome Leggings");
+
+//  LOAD BOOTS   
+        MyBoots_1 = new MyArmor(2063, EnumArmorMaterial.IRON, 0, 3, "myarmor");
+        GameRegistry.registerItem(MyBoots_1, "MyBoots_1");
+        LanguageRegistry.addName(MyBoots_1, "My Awesome Boots");
+    
+
+**********************************************************************
+  RECIPES SECTION
+**********************************************************************
+
+    //  HELMET RECIPE   
+    GameRegistry.addRecipe(new ItemStack(MyHelmet_1, 1), new Object[]
+    {
+            "XXX",
+            "X X",
+        'X', MyItem_1,
+    });         
+
+//  CHESTPLATE RECIPE   
+    GameRegistry.addRecipe(new ItemStack(MyChest_1, 1), new Object[]
+    {
+            "X X",
+            "XXX",
+            "XXX",
+        'X', MyItem_1,
+    });         
+
+//  LEGGINGS RECIPE 
+    GameRegistry.addRecipe(new ItemStack(MyLeggings_1, 1), new Object[]
+    {
+            "XXX",
+            "X X",
+            "X X",
+        'X', MyItem_1,
+    });         
+
+//  BOOTS RECIPE    
+    GameRegistry.addRecipe(new ItemStack(MyBoots_1, 1), new Object[]
+    {
+            "X X",
+            "X X",
+        'X', MyItem_1,
+    });             

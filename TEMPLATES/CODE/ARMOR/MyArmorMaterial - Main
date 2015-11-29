@@ -1,0 +1,8 @@
+**********************************************************************
+  DECLARATION SECTION
+**********************************************************************
+
+    //  DECLARE THE ARMOR MATERIAL
+        public static EnumArmorMaterial MyArmorMaterial_1 = EnumHelper.addArmorMaterial("Awesomeness", 33, new int[]{3, 8, 6, 3}, 10);
+                                 
+    

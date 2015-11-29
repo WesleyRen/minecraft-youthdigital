@@ -1,0 +1,38 @@
+**********************************************************************
+  DECLARATION SECTION
+**********************************************************************
+
+    //  DECLARE THE BIOME
+        public static  BiomeGenBase MyBiome_1;  
+
+    
+**********************************************************************
+  LOAD SECTION
+**********************************************************************
+
+    //  LOAD BIOME
+        MyBiome_1 = new MyBiome(30);
+        GameRegistry.addBiome(MyBiome_1);
+        
+//  REMOVE OTHER BIOMES
+        GameRegistry.removeBiome(BiomeGenBase.beach);
+        GameRegistry.removeBiome(BiomeGenBase.desert);
+        GameRegistry.removeBiome(BiomeGenBase.desertHills);
+        GameRegistry.removeBiome(BiomeGenBase.desertHills);
+        GameRegistry.removeBiome(BiomeGenBase.extremeHills);
+        GameRegistry.removeBiome(BiomeGenBase.extremeHillsEdge);
+        GameRegistry.removeBiome(BiomeGenBase.forest);
+        GameRegistry.removeBiome(BiomeGenBase.forestHills);
+        GameRegistry.removeBiome(BiomeGenBase.frozenOcean);
+        GameRegistry.removeBiome(BiomeGenBase.frozenRiver);
+        GameRegistry.removeBiome(BiomeGenBase.iceMountains);
+        GameRegistry.removeBiome(BiomeGenBase.icePlains);
+        GameRegistry.removeBiome(BiomeGenBase.jungle);
+        GameRegistry.removeBiome(BiomeGenBase.jungleHills);
+        GameRegistry.removeBiome(BiomeGenBase.mushroomIsland);
+        GameRegistry.removeBiome(BiomeGenBase.ocean);
+        GameRegistry.removeBiome(BiomeGenBase.plains);
+        GameRegistry.removeBiome(BiomeGenBase.river);
+        GameRegistry.removeBiome(BiomeGenBase.swampland);
+        GameRegistry.removeBiome(BiomeGenBase.taiga);
+        GameRegistry.removeBiome(BiomeGenBase.taigaHills);           

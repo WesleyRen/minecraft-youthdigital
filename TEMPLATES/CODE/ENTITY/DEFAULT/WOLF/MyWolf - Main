@@ -1,0 +1,34 @@
+***********************************************************************
+    LOAD SECTION
+***********************************************************************
+        
+    //  REGISTER YOUR ENTITY
+        EntityRegistry.registerGlobalEntityID(MyEntityWolf.class, "My Awesome Mob", EntityRegistry.findGlobalUniqueEntityId());
+        EntityRegistry.addSpawn(MyEntityWolf.class, 50, 1, 5, EnumCreatureType.monster, BiomeGenBase.desert);
+        EntityRegistry.addSpawn(MyEntityWolf.class, 50, 1, 5, EnumCreatureType.monster, MyBiome_1);     
+        registerEntityEgg(MyEntityWolf.class, (new Color(0, 255, 0)).getRGB(), (new Color(255, 0, 0)).getRGB());
+        RenderingRegistry.registerEntityRenderingHandler(MyEntityWolf.class, new MyRenderWolf(new MyModelWolf(), 0.3F));
+        ModLoader.addLocalization("entity.My Awesome Mob.name", "My Awesome Mob");
+        
+**************************************************************
+    DECLARATION SECTION - ONLY REQUIRED FOR FIRST MOB
+**************************************************************
+    
+    //  DECLARE THE MOB ID
+        static int MyEntityID = 300;
+    
+    //  SEARCH FOR UNIQUE ID    
+        public static int getUniqueEntityId() {
+            do {
+                MyEntityID++;
+            }
+            while (EntityList.getStringFromID(MyEntityID) != null);
+            return MyEntityID++;
+        }
+    
+    //  DECLARE A NEW EGG
+        public static void registerEntityEgg(Class <? extends Entity> entity, int primaryColor, int secondaryColor) {
+            int id = getUniqueEntityId();
+            EntityList.IDtoClassMapping.put(id, entity);
+            EntityList.entityEggs.put(id, new EntityEggInfo(id, primaryColor, secondaryColor));
+        }

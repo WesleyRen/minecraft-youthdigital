@@ -1,0 +1,6 @@
+**********************************************************************
+  DECLARATION SECTION
+**********************************************************************
+   
+    //  DECLARE NEW TOOL MATERIAL
+        public static EnumToolMaterial MyToolMaterial = EnumHelper.addToolMaterial("Awesomeness", 3, 1561, 8.0F, 3.0F, 10);

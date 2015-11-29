@@ -1,0 +1,34 @@
+***********************************************************************
+    LOAD SECTION
+***********************************************************************
+        
+    //  REGISTER YOUR ENTITY
+        EntityRegistry.registerGlobalEntityID(MyEntityWraith.class, "Wraith", EntityRegistry.findGlobalUniqueEntityId());
+        EntityRegistry.addSpawn(MyEntityWraith.class, 50, 1, 5, EnumCreatureType.monster, BiomeGenBase.desert);  
+        EntityRegistry.addSpawn(MyEntityWraith.class, 50, 1, 5, EnumCreatureType.monster, MyBiome_1);  
+        registerEntityEgg(MyEntityWraith.class, (new Color(15, 2, 10)).getRGB(), (new Color(67, 8, 43)).getRGB());
+        RenderingRegistry.registerEntityRenderingHandler(MyEntityWraith.class, new MyRenderWraith(new MyModelWraith(), 0.3F));
+        ModLoader.addLocalization("entity.Wraith.name", "Wraith");
+        
+**************************************************************
+    DECLARATION SECTION - ONLY REQUIRED FOR FIRST MOB
+**************************************************************
+    
+    //  DECLARE THE MOD ID
+        static int MyEntityID = 300;
+    
+    //  SEARCH FOR UNIQUE ID    
+        public static int getUniqueEntityId() {
+            do {
+                MyEntityID++;
+            }
+            while (EntityList.getStringFromID(MyEntityID) != null);
+            return MyEntityID++;
+        }
+    
+    //  DECLARE A NEW EGG
+        public static void registerEntityEgg(Class <? extends Entity> entity, int primaryColor, int secondaryColor) {
+            int id = getUniqueEntityId();
+            EntityList.IDtoClassMapping.put(id, entity);
+            EntityList.entityEggs.put(id, new EntityEggInfo(id, primaryColor, secondaryColor));
+        }
