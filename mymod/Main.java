@@ -70,6 +70,13 @@ public class Main {
     public static Item MyChest_1;
     public static Item MyLeggings_1;
     public static Item MyBoots_1;
+    
+    
+    
+    
+    //  DECLARE THE ARMOR MATERIAL
+   														/**maxDamageFactor, damageReductionAmountArray, enchantability*/
+    public static EnumArmorMaterial MyArmorMaterial_1 = EnumHelper.addArmorMaterial("GemStone", 900000, new int[]{30, 80, 60, 30}, 900000000);
 
     
 /* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ */	
@@ -113,22 +120,22 @@ public class Main {
 		
 
 	    //  LOAD HELMET 
-	        MyHelmet_1 = new MyArmor(2060, EnumArmorMaterial.IRON, 0, 0, "myarmor");
+	        MyHelmet_1 = new MyArmor(2060, MyArmorMaterial_1, 0, 0, "myarmor");
 	        GameRegistry.registerItem(MyHelmet_1, "MyHelmet_1");
 	        LanguageRegistry.addName(MyHelmet_1, "Sapphire Helmet");      
 	    
 	//  LOAD CHESTPLATE
-	        MyChest_1 = new MyArmor(2061, EnumArmorMaterial.IRON, 0, 1, "myarmor");
+	        MyChest_1 = new MyArmor(2061, MyArmorMaterial_1, 0, 1, "myarmor");
 	        GameRegistry.registerItem(MyChest_1, "MyChest_1");
 	        LanguageRegistry.addName(MyChest_1, "Gilded Gold Chestplate");
 
 	//  LOAD LEGGINGS    
-	        MyLeggings_1 = new MyArmor(2062, EnumArmorMaterial.IRON, 0, 2, "myarmor");
+	        MyLeggings_1 = new MyArmor(2062, MyArmorMaterial_1, 0, 2, "myarmor");
 	        GameRegistry.registerItem(MyLeggings_1, "MyLeggings_1");
 	        LanguageRegistry.addName(MyLeggings_1, "Ruby Leggings");
 
 	//  LOAD BOOTS   
-	        MyBoots_1 = new MyArmor(2063, EnumArmorMaterial.IRON, 0, 3, "myarmor");
+	        MyBoots_1 = new MyArmor(2063, MyArmorMaterial_1, 0, 3, "myarmor");
 	        GameRegistry.registerItem(MyBoots_1, "MyBoots_1");
 	        LanguageRegistry.addName(MyBoots_1, "Emerald Boots");
 
